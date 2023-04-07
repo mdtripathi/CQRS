@@ -1,0 +1,23 @@
+scalar Date
+
+type User {
+    id: ID!
+    firstName: String
+    lastName: String
+    dateOfBirth: Date
+    identityNumber: Int
+}
+
+type Driver {
+    id: ID!
+    driverName: String
+    identityNumber: Int
+}
+
+type Query {
+    allUsers: [User]
+    findOneUser(id: ID!): User
+
+    allDrivers: [Driver]
+    findOneDriver(id: ID!): Driver
+}

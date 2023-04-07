@@ -1,0 +1,10 @@
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/entity/DriverEntity.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/repo/UserRepository.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/listener/UserEventListener.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/listener/DriverEventListener.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/entity/UserEntity.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/repo/DriverRepository.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/controller/UserQueryController.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/Main.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/config/ScalarConfig.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-query-service/src/main/java/com/github/shazin/cqrs/ms/user/query/controller/DriverQueryController.java

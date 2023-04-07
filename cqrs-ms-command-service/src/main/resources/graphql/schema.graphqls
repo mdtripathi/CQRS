@@ -1,0 +1,44 @@
+scalar Date
+
+type User {
+    id: ID!
+    firstName: String
+    lastName: String
+    dateOfBirth: Date
+    identityNumber: Int
+}
+
+input UserInput {
+    firstName: String
+    lastName: String
+    dateOfBirth: Date
+    identityNumber: Int
+}
+
+type Driver {
+    id: ID!
+    driverName: String
+    identityNumber: Int
+}
+
+input DriverInput {
+    driverName: String
+    identityNumber: Int
+}
+
+type Mutation {
+    # restricted
+    createUser(user: UserInput!): User
+    deleteUser(id: ID!): ID
+
+    createDriver(driver: DriverInput!): Driver
+    deleteDriver(id: ID!): ID
+}
+
+type Query {
+    allUsers: [User]
+    findOneUser(id: ID!): User
+
+    allDrivers: [Driver]
+    findOneDriver(id:ID!): Driver
+}

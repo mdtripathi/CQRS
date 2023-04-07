@@ -1,0 +1,10 @@
+com/github/shazin/cqrs/ms/user/query/controller/UserQueryController.class
+com/github/shazin/cqrs/ms/user/query/listener/DriverEventListener.class
+com/github/shazin/cqrs/ms/user/query/entity/DriverEntity.class
+com/github/shazin/cqrs/ms/user/query/config/ScalarConfig.class
+com/github/shazin/cqrs/ms/user/query/entity/UserEntity.class
+com/github/shazin/cqrs/ms/user/query/repo/UserRepository.class
+com/github/shazin/cqrs/ms/user/query/repo/DriverRepository.class
+com/github/shazin/cqrs/ms/user/query/controller/DriverQueryController.class
+com/github/shazin/cqrs/ms/user/query/listener/UserEventListener.class
+com/github/shazin/cqrs/ms/user/query/Main.class

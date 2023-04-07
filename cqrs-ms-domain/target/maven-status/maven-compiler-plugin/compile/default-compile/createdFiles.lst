@@ -1,0 +1,8 @@
+com/github/shazin/cqrs/ms/user/dto/UserDeleteEvent.class
+com/github/shazin/cqrs/ms/user/dto/User.class
+com/github/shazin/cqrs/ms/user/dto/DriverDeleteEvent.class
+com/github/shazin/cqrs/ms/user/dto/DriverEvent.class
+com/github/shazin/cqrs/ms/user/dto/UserCreateEvent.class
+com/github/shazin/cqrs/ms/user/dto/UserEvent.class
+com/github/shazin/cqrs/ms/user/dto/DriverCreateEvent.class
+com/github/shazin/cqrs/ms/user/dto/Driver.class

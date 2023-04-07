@@ -1,0 +1,8 @@
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/Driver.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/DriverEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/UserCreateEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/DriverCreateEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/UserEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/UserDeleteEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/DriverDeleteEvent.java
+/Users/mnb/Desktop/ride_sharing_app/cqrs-ms-domain/src/main/java/com/github/shazin/cqrs/ms/user/dto/User.java
