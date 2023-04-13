@@ -1,4 +1,5 @@
 scalar Date
+scalar Time
 
 type User {
     id: ID!
@@ -14,14 +15,6 @@ input UserInput {
     dateOfBirth: Date
     identityNumber: Int
 }
-type Mutation {
-    # restricted
-    createUser(user: UserInput!): User
-    deleteUser(id: ID!): ID
-
-    createDriver(driver: DriverInput!): Driver
-    deleteDriver(id: ID!): ID
-}
 
 type Driver {
     id: ID!
@@ -30,14 +23,91 @@ type Driver {
 }
 
 input DriverInput {
-    driverName: String
+    driverName: String!
     identityNumber: Int
 }
 
+input DriverUpdateInput {
+    id: ID!
+    driverName: String!
+}
+
+type Trip {
+    id: ID!
+    pickUpTime: Time!
+    pickUpLocation: String!
+    dropOffLocation: String!
+}
+
+input TripInput {
+    pickUpTime: Time!
+    pickUpLocation: String!
+    dropOffLocation: String!
+}
+
+input TripUpdateInput {
+    id: ID!
+    pickUpTime: Time
+    pickUpLocation: String
+    dropOffLocation: String
+}
+
+type Assignment {
+    id: ID!
+    driverId: ID!
+    tripId: ID!
+    status: String!
+}
+
+input AssignmentInput {
+    driverId: ID!
+    tripId: ID!
+}
+
+input AssignmentUpdateInput {
+    id: ID!
+}
+
+type Mutation {
+    # restricted
+    createUser(user: UserInput!): User
+    deleteUser(id: ID!): ID
+
+    createDriver(driver: DriverInput!): Driver
+    updateDriver(driver: DriverUpdateInput!): Driver
+    deleteDriver(id: ID!): ID
+
+    createTrip(trip: TripInput!): Trip
+    updateTrip(trip: TripUpdateInput!): Trip
+    deleteTrip(id: ID!): ID
+
+    assign(assignment: AssignmentInput!): Assignment
+    cancel(assignment: AssignmentUpdateInput!): Assignment
+    accept(assignment: AssignmentUpdateInput!): Assignment
+    enRoute(assignment: AssignmentUpdateInput!): Assignment
+    inProgress(assignment: AssignmentUpdateInput!): Assignment
+    completed(assignment: AssignmentUpdateInput!): Assignment
+    deleteAssignment(id: ID!): ID
+}
+
 type Query {
-    allUsers: [User]
-    findOneUser(id: ID!): User
+    allUsers: [User!]
+    findOneUser(id: ID!): User!
 
     allDrivers: [Driver]
-    findOneDriver(id:ID!): Driver
+    findOneDriver(id: ID!): Driver
+
+    allTrips: [Trip]
+    findOneTrip(id: ID!): Trip
+
+    allAssignments: [Assignment]
+    findOneAssignment(id: ID!): Assignment
 }
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+
+

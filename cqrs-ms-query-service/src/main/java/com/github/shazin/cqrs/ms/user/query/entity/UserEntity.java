@@ -1,4 +1,5 @@
 package com.github.shazin.cqrs.ms.user.query.entity;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;

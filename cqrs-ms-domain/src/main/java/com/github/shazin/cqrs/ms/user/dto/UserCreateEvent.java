@@ -7,4 +7,3 @@ public record UserCreateEvent(User user) implements UserEvent {
         return "CREATE";
     }
 }
-

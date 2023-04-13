@@ -15,7 +15,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <start-class>com.github.shazin.cqrs.ms.user.command.Main</start-class>
+        <start-class>com.github.shazin.cqrs.ms.Main</start-class>
     </properties>
 
     <dependencies>
@@ -73,7 +73,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.shazin.cqrs.ms.user.command.Main</mainClass>
+                            <mainClass>com.github.shazin.cqrs.ms.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

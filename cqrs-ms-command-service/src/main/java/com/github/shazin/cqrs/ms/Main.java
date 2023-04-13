@@ -1,4 +1,4 @@
-package com.github.shazin.cqrs.ms.user.command;
+package com.github.shazin.cqrs.ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

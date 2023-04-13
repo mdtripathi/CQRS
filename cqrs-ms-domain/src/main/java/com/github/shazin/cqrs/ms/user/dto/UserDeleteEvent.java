@@ -7,5 +7,3 @@ public record UserDeleteEvent(String id) implements UserEvent {
         return "DELETE";
     }
 }
-
-

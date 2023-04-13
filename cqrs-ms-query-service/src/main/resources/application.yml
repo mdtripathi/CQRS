@@ -1,8 +1,12 @@
 spring:
+  jpa:
+    properties.hibernate:
+      enable_lazy_load_no_trans: true
+
   kafka:
     consumer:
       bootstrap-servers: kafka:9092
-      group-id: cqrs-ms-user-query
+      group-id: cqrs-ms-assignment-query
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

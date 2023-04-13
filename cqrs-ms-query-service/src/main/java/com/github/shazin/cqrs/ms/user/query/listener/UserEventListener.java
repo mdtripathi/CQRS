@@ -1,4 +1,5 @@
 package com.github.shazin.cqrs.ms.user.query.listener;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.shazin.cqrs.ms.user.dto.User;
 import com.github.shazin.cqrs.ms.user.dto.UserCreateEvent;
@@ -26,7 +27,7 @@ public class UserEventListener {
         this.userRepository = userRepository;
     }
 
-    @KafkaListener(topics = "${kafka.topic.name}")
+    @KafkaListener(topics = "com.github.shazin.cqrs.ms.users.json")
     public void consume(String message) {
         try {
             Map<String, String> userEvent = objectMapper.readValue(message, Map.class);
@@ -39,7 +40,7 @@ public class UserEventListener {
                 userRepository.deleteById(userDeleteEvent.id());
             }
         } catch (Exception e) {
-            LOGGER.error("Error while handling message in user", e);
+            LOGGER.error("Error while handling message", e);
         }
     }
 }

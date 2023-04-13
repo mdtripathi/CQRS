@@ -1,4 +1,5 @@
 package com.github.shazin.cqrs.ms.user.command.handler.impl;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.shazin.cqrs.ms.user.command.entity.UserCommand;
 import com.github.shazin.cqrs.ms.user.command.repo.UserCommandRepository;
@@ -25,7 +26,7 @@ public class DefaultUserEventHandler implements UserEventHandler {
 
     public DefaultUserEventHandler(KafkaTemplate<String, String> kafkaTemplate, @Value("${kafka.topic.name}") String kafkaTopicName, ObjectMapper objectMapper, UserCommandRepository userCommandRepository) {
         this.kafkaTemplate = kafkaTemplate;
-        this.kafkaTopicName = kafkaTopicName;
+        this.kafkaTopicName = "com.github.shazin.cqrs.ms.users.json";
         this.objectMapper = objectMapper;
         this.userCommandRepository = userCommandRepository;
     }
@@ -42,5 +43,5 @@ public class DefaultUserEventHandler implements UserEventHandler {
         }
     }
 
-}
 
+}

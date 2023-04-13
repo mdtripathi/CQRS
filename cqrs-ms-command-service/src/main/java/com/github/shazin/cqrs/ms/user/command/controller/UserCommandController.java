@@ -1,4 +1,5 @@
 package com.github.shazin.cqrs.ms.user.command.controller;
+
 import com.github.shazin.cqrs.ms.user.command.dto.UserInput;
 import com.github.shazin.cqrs.ms.user.command.handler.UserEventHandler;
 import com.github.shazin.cqrs.ms.user.dto.User;

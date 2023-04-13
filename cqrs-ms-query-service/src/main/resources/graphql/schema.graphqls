@@ -1,4 +1,5 @@
 scalar Date
+scalar Time
 
 type User {
     id: ID!
@@ -14,10 +15,31 @@ type Driver {
     identityNumber: Int
 }
 
+type Trip {
+    id: ID!
+    pickUpTime: Time!
+    pickUpLocation: String!
+    dropOffLocation: String!
+}
+
+type Assignment {
+    id: ID!
+    driverId: ID!
+    tripId: ID!
+    status: String!
+}
+
 type Query {
     allUsers: [User]
     findOneUser(id: ID!): User
 
     allDrivers: [Driver]
     findOneDriver(id: ID!): Driver
+
+    allTrips: [Trip]
+    findOneTrip(id: ID!): Trip
+
+    allAssignments: [Assignment]
+    findOneAssignment(id: ID!): Assignment
 }
+
